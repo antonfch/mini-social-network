@@ -1,0 +1,30 @@
+.particles {
+  position: fixed;
+  pointer-events: none;
+  z-index: 1000;
+  animation: pop 1s ease-out;
+}
+
+.particles.like {
+  background-color: #4caf50; /* Vert */
+}
+
+.particles.dislike {
+  background-color: #f44336; /* Rouge */
+}
+
+.particles.love {
+  background-color: #ff4081; /* Rose */
+  border-radius: 50%;
+}
+
+@keyframes pop {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
